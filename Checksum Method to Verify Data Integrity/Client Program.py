@@ -10,7 +10,6 @@ def calculate_checksum(data):
     for i in range(0, len(data), 2):
         sum += int.from_bytes(data[i:i+2], byteorder='big')
 
-    # Handle any odd byte at the end of the buffer
     if len(data) % 2 != 0:
         sum += int.from_bytes(data[-1:], byteorder='big')
 
