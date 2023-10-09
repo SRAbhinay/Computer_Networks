@@ -13,7 +13,6 @@ def calculate_checksum(data):
     if len(data) % 2 != 0:
         sum += int.from_bytes(data[-1:], byteorder='big')
 
-    # Fold the sum to get a 16-bit result
     while sum >> 16:
         sum = (sum & 0xFFFF) + (sum >> 16)
 
