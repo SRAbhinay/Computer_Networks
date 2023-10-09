@@ -16,7 +16,6 @@ def calculate_checksum(data):
     while sum >> 16:
         sum = (sum & 0xFFFF) + (sum >> 16)
 
-    # Take the one's complement of the result
     checksum = ~sum & 0xFFFF
 
     return checksum
