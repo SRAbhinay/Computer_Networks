@@ -23,7 +23,6 @@ def calculate_checksum(data):
 def main():
     server_ip = input("Enter server IP: ")
 
-    # Create a socket
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         # Connect to the server
         sock.connect((server_ip, PORT))
