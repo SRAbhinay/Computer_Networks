@@ -20,7 +20,6 @@ if __name__ == "__main__":
     format = input("Enter the format you want to convert the IP address to (binary, dottedDecimal, or hexadecimal): ")
     format = format.strip().lower()
     
-    # Convert the IP address to binary format
     binary_ip = ipv4_dotted_decimal_to_binary(ip_address)
 
     # Convert the IP address to the requested format
