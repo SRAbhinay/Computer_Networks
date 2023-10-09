@@ -26,7 +26,6 @@ def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         sock.connect((server_ip, PORT))
 
-        # Receive data from the server
         data = sock.recv(BUFFER_SIZE)
         received_checksum = int.from_bytes(data[:2], byteorder='big')
         payload = data[2:]
