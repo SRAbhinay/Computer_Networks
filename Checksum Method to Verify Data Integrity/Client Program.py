@@ -4,7 +4,6 @@ PORT = 8080
 BUFFER_SIZE = 256
 
 def calculate_checksum(data):
-    # Initialize sum and checksum to zero
     sum = 0
     checksum = 0
 
