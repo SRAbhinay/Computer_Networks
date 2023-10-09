@@ -30,7 +30,6 @@ def main():
         received_checksum = int.from_bytes(data[:2], byteorder='big')
         payload = data[2:]
 
-        # Calculate checksum for received data
         calculated_checksum = calculate_checksum(payload)
 
         # Compare calculated checksum with received checksum
