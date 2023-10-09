@@ -17,7 +17,6 @@ def ipv4_binary_to_hexadecimal(binary):
 if __name__ == "__main__":
     ip_address = input("Enter an IPv4 address: ")
     
-    # Get the format from the user
     format = input("Enter the format you want to convert the IP address to (binary, dottedDecimal, or hexadecimal): ")
     format = format.strip().lower()
     
