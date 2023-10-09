@@ -22,7 +22,6 @@ if __name__ == "__main__":
     
     binary_ip = ipv4_dotted_decimal_to_binary(ip_address)
 
-    # Convert the IP address to the requested format
     if format == "binary":
         print("Binary representation:", end=" ")
         for byte in binary_ip:
