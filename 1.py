@@ -6,7 +6,6 @@ def ipv4_dotted_decimal_to_binary(dotted_decimal):
     binary = bytes([a, b, c, d])
     return binary
 
-# Convert an IPv4 address from binary format to dotted decimal format
 def ipv4_binary_to_dotted_decimal(binary):
     dotted_decimal = ".".join(str(byte) for byte in binary)
     return dotted_decimal
