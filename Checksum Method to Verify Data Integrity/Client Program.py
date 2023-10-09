@@ -32,7 +32,6 @@ def main():
 
         calculated_checksum = calculate_checksum(payload)
 
-        # Compare calculated checksum with received checksum
         if calculated_checksum == received_checksum:
             print("Data integrity verified. Checksums match.")
         else:
