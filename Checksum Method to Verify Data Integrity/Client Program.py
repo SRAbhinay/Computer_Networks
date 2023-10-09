@@ -7,7 +7,6 @@ def calculate_checksum(data):
     sum = 0
     checksum = 0
 
-    # Add all the 16-bit words together
     for i in range(0, len(data), 2):
         sum += int.from_bytes(data[i:i+2], byteorder='big')
 
