@@ -10,7 +10,6 @@ def ipv4_binary_to_dotted_decimal(binary):
     dotted_decimal = ".".join(str(byte) for byte in binary)
     return dotted_decimal
 
-# Convert an IPv4 address from binary format to hexadecimal format
 def ipv4_binary_to_hexadecimal(binary):
     hexadecimal = "".join("{:02x}".format(byte) for byte in binary)
     return hexadecimal
