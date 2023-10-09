@@ -24,7 +24,6 @@ def main():
     server_ip = input("Enter server IP: ")
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-        # Connect to the server
         sock.connect((server_ip, PORT))
 
         # Receive data from the server
