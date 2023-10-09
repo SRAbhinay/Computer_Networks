@@ -1,7 +1,6 @@
 import sys
 
 def ipv4_dotted_decimal_to_binary(dotted_decimal):
-    # Parse the dotted decimal string into four parts
     a, b, c, d = map(int, dotted_decimal.split("."))
     
     # Convert each part to binary format
