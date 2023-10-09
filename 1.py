@@ -3,7 +3,6 @@ import sys
 def ipv4_dotted_decimal_to_binary(dotted_decimal):
     a, b, c, d = map(int, dotted_decimal.split("."))
     
-    # Convert each part to binary format
     binary = bytes([a, b, c, d])
     return binary
 
